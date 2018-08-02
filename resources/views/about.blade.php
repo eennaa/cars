@@ -1,24 +1,9 @@
-<!doctype html>
-<html>
-    <head>
-        <title> About us </title>
+@extends('layouts.master')
 
-        <style>
-                html, body {
-                    background-color: orange;
-                    color: green;
-                    font-family: 'Tangerine', sans-serif;
-                    font-weight: 1000;
-                    height: 100vh;
-                    margin: 30;
-                }
-        </style>
-    </head>
+@section('title')
+    About us
+@endsection
 
-    <body> 
-        <div class="flex-center position-ref full-height" align="center">
-            About us 
-        </div>
-    </body>
-
-</html>
+@section('content')
+    About us
+@endsection

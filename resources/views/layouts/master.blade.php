@@ -5,9 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Cars project</title>
-        
+        <title>@yield('title')</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+                                integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+                                crossorigin="anonymous">
 
+        
+        @include('layouts.header')
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet" >
 
@@ -43,7 +47,7 @@
             }
 
             .content {
-                text-align: center;
+                text-align: left;
                 font-size: 60px;
             }
 
@@ -55,23 +59,14 @@
                 margin-bottom: 170px;
             }
         </style>
-
     </head>
     <body>
-    @include('layouts.header')
-
-        <div class="flex-center position-ref full-height">
+        <div class="content">
             
-            <div class="content">
-                <div class="title m-b-md" color="green">
-                    Welcome to Cars Project
-                </div>
-                <div>
-                    Hello, {{ $name }}! I'm {{ $age }} old.
-                </div>
+            @yield('content')
 
                 
-            </div>
+        
         </div>
     </body>
 </html>
