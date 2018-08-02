@@ -43,6 +43,7 @@
 
             .content {
                 text-align: center;
+                font-size: 60px;
             }
 
             .title {
@@ -60,6 +61,9 @@
             <div class="content">
                 <div class="title m-b-md" color="green">
                     Welcome to Cars Project
+                </div>
+                <div>
+                    Hello, {{ $name }}! I'm {{ $age }} old.
                 </div>
 
                 
