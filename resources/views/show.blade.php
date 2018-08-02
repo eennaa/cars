@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title> Cars </title>
+        <title> {{ $car->producer }} {{ $car->title }} </title>
 
         <style>
                 html, body {
@@ -17,9 +17,10 @@
 
     <body> 
         <div class="flex-center position-ref full-height">            
-            @foreach($cars as $car)
-            <ul> {{ $car->producer }} - {{ $car->title }} </ul>
-            @endforeach            
+            <div class="title"> Title: {{ $car->title }} </div>
+            <p> Producer: {{ $car->producer }}  </p>
+            <p> Number of doors: {{ $car->number_of_doors }} </p>
+                  
         </div>
     </body>
 
